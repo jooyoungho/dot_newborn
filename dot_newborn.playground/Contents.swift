@@ -1,7 +1,7 @@
 
 let artBoardWidth = 210
 let artBoardHeight = 297
-let NumberOfElements = 1200 //0
+let NumberOfElements = 1200
 var rects:String = ""
 var style:String = ""
 
