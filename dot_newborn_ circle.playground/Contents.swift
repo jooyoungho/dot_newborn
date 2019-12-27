@@ -1,12 +1,12 @@
 
 let artBoardWidth = 210
 let artBoardHeight = 297
-let NumberOfElements = 1200
+let NumberOfElements = 10000
 var rects:String = ""
 var style:String = ""
 
 var gridNoise:Int {
-    return Int.random(in: 1...24)
+    return Int.random(in: 1...31)
 }
 
 var element:(Int,Int) {
@@ -61,7 +61,7 @@ for id in 0..<colorCode.count {
 }
 
 for _ in 0..<NumberOfElements {
-    rects += "<rect x='\(element.0)' y='\(element.1)' width='\(element.0)' height='\(element.1)' class='color\(Int.random(in: 0..<colorCode.count))'/>"
+    rects += "<circle cx='\(element.0)' cy='\(element.1)' r='\(element.0)' class='color\(Int.random(in: 0..<colorCode.count))'/>"
     
 }
 var output:String {
